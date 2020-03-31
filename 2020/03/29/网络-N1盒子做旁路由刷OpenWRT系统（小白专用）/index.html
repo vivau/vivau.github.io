@@ -29,7 +29,7 @@
     scheme: 'Pisces',
     version: '7.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     copycode: {"enable":false,"show_result":false,"style":null},
     fancybox: false,
     mediumzoom: false,
@@ -42,10 +42,10 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     search: {
       root: '/',
-      path: ''
+      path: 'search.xml'
     },
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -60,19 +60,19 @@
   <meta name="description" content="N1盒子做旁路由刷OpenWRT系统（小白专用）为什么要用N1盒子 现如今新上市的路由器，市面上能买到的300元以内的路由器大多数都是双频(5G Hz和2.4G Hz)和几年前相比无论是速度还是性能都有大幅度提升，作为普通用户已经能满足上网需求。但是由于部分用户对网络环境有其他需求例如，本地NAS存储，可以实现为一台不限速的网络存储，省去随身携带U盘；亦或是实现某些网站的自动签到；再或者实现去广告">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络|N1盒子做旁路由刷OpenWRT系统（小白专用）">
-<meta property="og:url" content="http://yoursite.com/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/index.html">
-<meta property="og:site_name" content="neobuddy">
+<meta property="og:url" content="http://xzsu.tk/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/index.html">
+<meta property="og:site_name" content="Little Doctor">
 <meta property="og:description" content="N1盒子做旁路由刷OpenWRT系统（小白专用）为什么要用N1盒子 现如今新上市的路由器，市面上能买到的300元以内的路由器大多数都是双频(5G Hz和2.4G Hz)和几年前相比无论是速度还是性能都有大幅度提升，作为普通用户已经能满足上网需求。但是由于部分用户对网络环境有其他需求例如，本地NAS存储，可以实现为一台不限速的网络存储，省去随身携带U盘；亦或是实现某些网站的自动签到；再或者实现去广告">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/.com//01%E5%88%B7%E6%9C%BA.png">
-<meta property="og:image" content="http://yoursite.com/.com//03ttyd.png">
-<meta property="og:image" content="http://yoursite.com/.com//02%E6%8E%A5%E7%BA%BF%E5%9B%BE.png">
-<meta property="og:updated_time" content="2020-03-30T14:21:22.850Z">
+<meta property="og:image" content="http://xzsu.tk/.tk//01%E5%88%B7%E6%9C%BA.png">
+<meta property="og:image" content="http://xzsu.tk/.tk//03ttyd.png">
+<meta property="og:image" content="http://xzsu.tk/.tk//03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/02接线图.png">
+<meta property="og:updated_time" content="2020-03-31T14:34:40.427Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络|N1盒子做旁路由刷OpenWRT系统（小白专用）">
 <meta name="twitter:description" content="N1盒子做旁路由刷OpenWRT系统（小白专用）为什么要用N1盒子 现如今新上市的路由器，市面上能买到的300元以内的路由器大多数都是双频(5G Hz和2.4G Hz)和几年前相比无论是速度还是性能都有大幅度提升，作为普通用户已经能满足上网需求。但是由于部分用户对网络环境有其他需求例如，本地NAS存储，可以实现为一台不限速的网络存储，省去随身携带U盘；亦或是实现某些网站的自动签到；再或者实现去广告">
-<meta name="twitter:image" content="http://yoursite.com/.com//01%E5%88%B7%E6%9C%BA.png">
-  <link rel="canonical" href="http://yoursite.com/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/">
+<meta name="twitter:image" content="http://xzsu.tk/.tk//01%E5%88%B7%E6%9C%BA.png">
+  <link rel="canonical" href="http://xzsu.tk/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/">
 
 
 <script id="page.configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>网络|N1盒子做旁路由刷OpenWRT系统（小白专用） | neobuddy</title>
+  <title>网络|N1盒子做旁路由刷OpenWRT系统（小白专用） | Little Doctor</title>
   
 
 
@@ -130,7 +130,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">neobuddy</span>
+        <span class="site-title">Little Doctor</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -164,6 +164,28 @@
         
         
           
+          <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
       
     
@@ -171,7 +193,34 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
     </ul>
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+    </div>
 </nav>
 
 </div>
@@ -198,16 +247,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/">
+    <link itemprop="mainEntityOfPage" href="http://xzsu.tk/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="x0rz">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/head8.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="neobuddy">
+      <meta itemprop="name" content="Little Doctor">
     </span>
       <header class="post-header">
 
@@ -245,7 +294,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-03-30 22:21:22" itemprop="dateModified" datetime="2020-03-30T22:21:22+08:00">2020-03-30</time>
+                <time title="修改时间：2020-03-31 22:34:40" itemprop="dateModified" datetime="2020-03-31T22:34:40+08:00">2020-03-31</time>
               </span>
             
           
@@ -316,7 +365,7 @@
 </ol>
 <h3 id="N1盒子刷入OpenWRT系统方法"><a href="#N1盒子刷入OpenWRT系统方法" class="headerlink" title="N1盒子刷入OpenWRT系统方法"></a>N1盒子刷入OpenWRT系统方法</h3><ol>
 <li><p>接通连线如下：</p>
-<p><img src="/.com//01%E5%88%B7%E6%9C%BA.png" alt="刷机"></p>
+<p><img src="/.tk//01%E5%88%B7%E6%9C%BA.png" alt="刷机"></p>
 </li>
 <li><p><strong>降级：</strong></p>
 <blockquote>
@@ -336,7 +385,7 @@
 </li>
 <li><p><strong>设置eMMC启动：</strong></p>
 <blockquote>
-<p>进入下图的TTYD界面，输入用户名：root密码：password。按照<a href="https://www.right.com.cn/forum/thread-3160780-1-1.html" target="_blank" rel="noopener">OpenWRT固件</a>文末方法设置将OpenWRT从U盘写入到eMMC。<br><img src="/.com//03ttyd.png" alt="TTYD"></p>
+<p>进入下图的TTYD界面，输入用户名：root密码：password。按照<a href="https://www.right.com.cn/forum/thread-3160780-1-1.html" target="_blank" rel="noopener">OpenWRT固件</a>文末方法设置将OpenWRT从U盘写入到eMMC。<br><img src="/.tk//03ttyd.png" alt="TTYD"></p>
 </blockquote>
 </li>
 <li><p>重启</p>
@@ -348,7 +397,7 @@
 </ol>
 <h3 id="N1做为旁路有上网"><a href="#N1做为旁路有上网" class="headerlink" title="N1做为旁路有上网"></a>N1做为旁路有上网</h3><ol>
 <li><p><strong>连接图：</strong></p>
-<p><img src="/.com//02%E6%8E%A5%E7%BA%BF%E5%9B%BE.png" alt="接线图"></p>
+<img src="/.tk//03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/02接线图.png" title="接线图">  
 </li>
 <li><p>浏览器输入192.168.123.1进入路由器后台，关闭DHCP服务(不同路由器设置网上查一查)</p>
 </li>
@@ -365,6 +414,21 @@
     
     
     
+      <div>
+        
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>x0rz</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://xzsu.tk/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/" title="网络|N1盒子做旁路由刷OpenWRT系统（小白专用）">http://xzsu.tk/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
 
     <footer class="post-footer">
         <div class="post-nav">
@@ -424,6 +488,9 @@
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/head8.png"
+      alt="x0rz">
   <p class="site-author-name" itemprop="name">x0rz</p>
   <div class="site-description motion-element" itemprop="description"></div>
 </div>
@@ -488,6 +555,11 @@
         <a href="mailto:bkxr@outlook.com" title="E-Mail &rarr; mailto:bkxr@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
     
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    
+  
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -568,6 +640,8 @@
     </footer>
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
 
     
@@ -625,6 +699,8 @@
 
 
 
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
 
 
 

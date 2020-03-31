@@ -29,7 +29,7 @@
     scheme: 'Pisces',
     version: '7.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     copycode: {"enable":false,"show_result":false,"style":null},
     fancybox: false,
     mediumzoom: false,
@@ -42,10 +42,10 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     search: {
       root: '/',
-      path: ''
+      path: 'search.xml'
     },
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -58,13 +58,13 @@
 </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="neobuddy">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="neobuddy">
+<meta property="og:title" content="Little Doctor">
+<meta property="og:url" content="http://xzsu.tk/index.html">
+<meta property="og:site_name" content="Little Doctor">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="neobuddy">
-  <link rel="canonical" href="http://yoursite.com/">
+<meta name="twitter:title" content="Little Doctor">
+  <link rel="canonical" href="http://xzsu.tk/">
 
 
 <script id="page.configurations">
@@ -73,7 +73,7 @@
   };
 </script>
 
-  <title>neobuddy</title>
+  <title>Little Doctor</title>
   
 
 
@@ -122,7 +122,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">neobuddy</span>
+        <span class="site-title">Little Doctor</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -156,6 +156,28 @@
         
         
           
+          <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
       
     
@@ -163,7 +185,34 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
     </ul>
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+    </div>
 </nav>
 
 </div>
@@ -189,16 +238,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/">
+    <link itemprop="mainEntityOfPage" href="http://xzsu.tk/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="x0rz">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/head8.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="neobuddy">
+      <meta itemprop="name" content="Little Doctor">
     </span>
       <header class="post-header">
 
@@ -238,7 +287,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-03-30 22:21:22" itemprop="dateModified" datetime="2020-03-30T22:21:22+08:00">2020-03-30</time>
+                <time title="修改时间：2020-03-31 22:34:40" itemprop="dateModified" datetime="2020-03-31T22:34:40+08:00">2020-03-31</time>
               </span>
             
           
@@ -308,16 +357,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/06/test/">
+    <link itemprop="mainEntityOfPage" href="http://xzsu.tk/2019/07/06/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="x0rz">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/head8.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="neobuddy">
+      <meta itemprop="name" content="Little Doctor">
     </span>
       <header class="post-header">
 
@@ -409,16 +458,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/06/Top/">
+    <link itemprop="mainEntityOfPage" href="http://xzsu.tk/2019/07/06/Top/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="x0rz">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/head8.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="neobuddy">
+      <meta itemprop="name" content="Little Doctor">
     </span>
       <header class="post-header">
 
@@ -554,6 +603,9 @@
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/head8.png"
+      alt="x0rz">
   <p class="site-author-name" itemprop="name">x0rz</p>
   <div class="site-description motion-element" itemprop="description"></div>
 </div>
@@ -619,6 +671,11 @@
       </span>
     
   </div>
+  <div class="cc-license motion-element" itemprop="license">
+    
+  
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
 
 
 
@@ -681,6 +738,8 @@
     </footer>
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
 
     
@@ -734,6 +793,8 @@
 
 
 
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
 
 
 

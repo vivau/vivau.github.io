@@ -29,7 +29,7 @@
     scheme: 'Pisces',
     version: '7.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     copycode: {"enable":false,"show_result":false,"style":null},
     fancybox: false,
     mediumzoom: false,
@@ -42,10 +42,10 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     search: {
       root: '/',
-      path: ''
+      path: 'search.xml'
     },
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -58,13 +58,13 @@
 </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="neobuddy">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
-<meta property="og:site_name" content="neobuddy">
+<meta property="og:title" content="Little Doctor">
+<meta property="og:url" content="http://xzsu.tk/archives/index.html">
+<meta property="og:site_name" content="Little Doctor">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="neobuddy">
-  <link rel="canonical" href="http://yoursite.com/archives/">
+<meta name="twitter:title" content="Little Doctor">
+  <link rel="canonical" href="http://xzsu.tk/archives/">
 
 
 <script id="page.configurations">
@@ -73,7 +73,7 @@
   };
 </script>
 
-  <title>归档 | neobuddy</title>
+  <title>归档 | Little Doctor</title>
   
 
 
@@ -122,7 +122,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">neobuddy</span>
+        <span class="site-title">Little Doctor</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -156,6 +156,28 @@
         
         
           
+          <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives menu-item-active">
       
     
@@ -163,7 +185,34 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+        <li class="menu-item menu-item-search">
+          <a href="javascript:;" class="popup-trigger">
+          
+            <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
     </ul>
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+    </div>
 </nav>
 
 </div>
@@ -180,6 +229,12 @@
             
 
     
+    
+      
+      
+    
+      
+      
     
       
       
@@ -359,6 +414,9 @@
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/head8.png"
+      alt="x0rz">
   <p class="site-author-name" itemprop="name">x0rz</p>
   <div class="site-description motion-element" itemprop="description"></div>
 </div>
@@ -424,6 +482,11 @@
       </span>
     
   </div>
+  <div class="cc-license motion-element" itemprop="license">
+    
+  
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
 
 
 
@@ -486,6 +549,8 @@
     </footer>
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
 
     
@@ -539,6 +604,8 @@
 
 
 
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
 
 
 
