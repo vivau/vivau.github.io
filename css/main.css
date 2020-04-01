@@ -1610,7 +1610,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #45e3ff;
+  background: #3869d2;
 }
 .feed-link,
 .chat {
@@ -2762,4 +2762,7 @@ ul.breadcrumb li+li:last-child {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.vsys {
+  display: none !important;
 }
