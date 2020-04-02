@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo|hexo+next7.3.0设置永久链接</title>
+    <url>/post/20200402xzsu.html</url>
+    <content><![CDATA[<h2 id="Hexo-hexo-next7-3-0设置永久链接"><a href="#Hexo-hexo-next7-3-0设置永久链接" class="headerlink" title="Hexo|hexo+next7.3.0设置永久链接"></a>Hexo|hexo+next7.3.0设置永久链接</h2><p>next主题默认的URL地址格式比较长，如果是标题中文比较长的话浏览器就会出现如下：</p>
+<p><img src="/post/image-20200402214502203.png" alt="image-20200402214502203"></p>
+<p>链接很长而且并且很不美观。后经过调整，为如下效果：</p>
+<p><img src="/post/image-20200402214659754.png" alt="image-20200402214659754"></p>
+<a id="more"></a>
+<h3 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h3><ol>
+<li><p>首先找到站点配置文件（并非主题配置文件），及根目录下的_config.ym搜索找到如下段落：</p>
+<p><img src="/post/image-20200402214937385.png" alt></p>
+<p>将URL段落的permalink（永久链接）格式依照个人喜好调试，格式含义<code>post/</code>字段是子目录</p>
+<p><code>:year</code> <code>:month</code> <code>:day</code> 分别代表的是年月日对应格式是<code>20200329</code>，随后的<code>id.html</code>中的id需要在文章中定义，如果没有定义则填充<code>undefine</code>。</p>
+</li>
+<li><p>在文章中添加id标签</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 网络|N1盒子做旁路由刷OpenWRT系统（小白专用）</span><br><span class="line">date: 2020-03-29 21:35:58 </span><br><span class="line">id: xzsu</span><br><span class="line">tags: N1 </span><br><span class="line">comment: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>例如我的id是xzsu。如果同一天发布多篇文章，则要注意修改id来区分博文URL。</p>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>网络|N1盒子做旁路由刷OpenWRT系统（小白专用）</title>
-    <url>/2020/03/29/%E7%BD%91%E7%BB%9C-N1%E7%9B%92%E5%AD%90%E5%81%9A%E6%97%81%E8%B7%AF%E7%94%B1%E5%88%B7OpenWRT%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%B0%8F%E7%99%BD%E4%B8%93%E7%94%A8%EF%BC%89/</url>
+    <url>/post/20200329xzsu.html</url>
     <content><![CDATA[<h2 id="N1盒子做旁路由刷OpenWRT系统（小白专用）"><a href="#N1盒子做旁路由刷OpenWRT系统（小白专用）" class="headerlink" title="N1盒子做旁路由刷OpenWRT系统（小白专用）"></a>N1盒子做旁路由刷OpenWRT系统（小白专用）</h2><h3 id="为什么要用N1盒子"><a href="#为什么要用N1盒子" class="headerlink" title="为什么要用N1盒子"></a>为什么要用N1盒子</h3><ol>
 <li>现如今新上市的路由器，市面上能买到的300元以内的路由器大多数都是双频(5G Hz和2.4G Hz)和几年前相比无论是速度还是性能都有大幅度提升，作为普通用户已经能满足上网需求。但是由于部分用户对网络环境有其他需求例如，本地NAS存储，可以实现为一台不限速的网络存储，省去随身携带U盘；亦或是实现某些网站的自动签到；再或者实现去广告上网等等等等。 <a id="more"></a></li>
 <li><strong>使用普通路由器不可以吗？</strong>由于需要的功能较多，现有路由器在运算和存储容量上都已经无法满足需求，就需要有一台本地的高性能路由器，软路由应运而生，既能解决特殊需求，也不影响网络质量。</li>
@@ -31,7 +53,7 @@
 </ol>
 <h3 id="N1盒子刷入OpenWRT系统方法"><a href="#N1盒子刷入OpenWRT系统方法" class="headerlink" title="N1盒子刷入OpenWRT系统方法"></a>N1盒子刷入OpenWRT系统方法</h3><ol>
 <li><p>接通连线如下：</p>
-<p><img src="/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/01刷机.png" alt="刷机"></p>
+<p><img src="/post/01刷机.png" alt="刷机"></p>
 </li>
 <li><p><strong>降级：</strong></p>
 <blockquote>
@@ -51,7 +73,7 @@
 </li>
 <li><p><strong>设置eMMC启动：</strong></p>
 <blockquote>
-<p>进入下图的TTYD界面，输入用户名：root密码：password。按照<a href="https://www.right.com.cn/forum/thread-3160780-1-1.html" target="_blank" rel="noopener">OpenWRT固件</a>文末方法设置将OpenWRT从U盘写入到eMMC。<br><img src="/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/03ttyd.png" alt="TTYD"></p>
+<p>进入下图的TTYD界面，输入用户名：root密码：password。按照<a href="https://www.right.com.cn/forum/thread-3160780-1-1.html" target="_blank" rel="noopener">OpenWRT固件</a>文末方法设置将OpenWRT从U盘写入到eMMC。<br><img src="/post/03ttyd.png" alt="TTYD"></p>
 </blockquote>
 </li>
 <li><p>重启</p>
@@ -63,7 +85,7 @@
 </ol>
 <h3 id="N1做为旁路有上网"><a href="#N1做为旁路有上网" class="headerlink" title="N1做为旁路有上网"></a>N1做为旁路有上网</h3><ol>
 <li><p><strong>连接图：</strong></p>
-<p><img src="/2020/03/29/网络-N1盒子做旁路由刷OpenWRT系统（小白专用）/02接线图.png" alt="接线图">    </p>
+<p><img src="/post/02接线图.png" alt="接线图">    </p>
 </li>
 <li><p>浏览器输入192.168.123.1进入路由器后台，关闭DHCP服务(不同路由器设置网上查一查)</p>
 </li>
@@ -75,17 +97,20 @@
 
 <h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>   ​      本文只介绍了将N1设置为旁路由的方法，N1还可以作为电视盒子、游戏主机等多种玩法，感兴趣的网友再自行研究。后续将介绍OpenWRT的使用方法，针对文章有疑问的地方请联系email: <a href="mailto:x@xzsu.top" target="_blank" rel="noopener">x@xzsu.top</a>  。</p>
 ]]></content>
+      <tags>
+        <tag>N1</tag>
+      </tags>
   </entry>
   <entry>
     <title>test</title>
-    <url>/2019/07/06/test/</url>
+    <url>/post/20190706xzsu.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hexo-Next博客搭建</title>
-    <url>/2019/07/06/Top/</url>
+    <url>/post/20190706xzsu.html</url>
     <content><![CDATA[<blockquote>
-<p>Hexo 是一个基于nodejs 的静态博客网站生成器，作者是来自 HeBei</p>
+<p>Hexo 是一个基于nodejs 的静态博客网站生成器。</p>
 </blockquote>
 ]]></content>
       <categories>
