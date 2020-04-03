@@ -102,11 +102,6 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/20190706/xzsu.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Hexo-Next博客搭建</title>
     <url>/20190706/xzsu.html</url>
     <content><![CDATA[<blockquote>
@@ -121,5 +116,10 @@
         <tag>hexo</tag>
         <tag>markdown</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/20190705/xzsu.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
