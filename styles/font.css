@@ -10,5 +10,5 @@
 
 @font-face {
     font-family: jinkaiFont;
-    src: url("../fonts/jinkai.ttf") format("TrueType");
+    src: url("../fonts/jinkai.woff2") format("woff2");
 }
